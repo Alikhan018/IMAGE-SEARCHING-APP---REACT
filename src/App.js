@@ -16,7 +16,7 @@ function App() {
     <div>
       <SearchBar handleSubmit={fetchImages} />
       {
-        images.length > 0 &&
+        images.length > 5 &&
         images.map(image => (
           <Images image={image} key={image.id} />
         ))
